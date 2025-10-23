@@ -1,5 +1,7 @@
 # Xcode
 
+GamiStreamSnag.xcodeproj/
+
 ## Build generated
 build/
 DerivedData/
@@ -83,3 +85,10 @@ fastlane/*.env
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+# Apple
+.DS_Store
+
+# XCodeGen
+buildServer.json
+
