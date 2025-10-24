@@ -50,11 +50,32 @@ public struct Resolution: Sendable, Equatable, Hashable {
 }
 
 extension Resolution {
-    static let standardDefinition = Resolution(unchecked: 640, height: 480)
-    static let widescreenStandardDefinition = Resolution(unchecked: 854, height: 480)
-    static let highDefinition = Resolution(unchecked: 1280, height: 720)
-    static let fullHD = Resolution(unchecked: 1920, height: 1080)
-    static let quadHD = Resolution(unchecked: 2560, height: 1440)
-    static let ultraHD = Resolution(unchecked: 3840, height: 2160)
-    static let fullUHD = Resolution(unchecked: 7680, height: 4320)
+    static let standardDefinition = Resolution(
+      unchecked: ResolutionConstants.standardDefinition.width,
+      height: ResolutionConstants.standardDefinition.height
+    )
+    static let widescreenStandardDefinition = Resolution(
+      unchecked: ResolutionConstants.widescreenStandardDefinition.width,
+      height: ResolutionConstants.widescreenStandardDefinition.height
+    )
+    static let highDefinition = Resolution(
+      unchecked: ResolutionConstants.highDefinition.width,
+      height: ResolutionConstants.highDefinition.height
+    )
+    static let fullHD = Resolution(
+      unchecked: ResolutionConstants.fullHD.width,
+      height: ResolutionConstants.fullHD.height
+    )
+    static let quadHD = Resolution(
+      unchecked: ResolutionConstants.quadHD.width,
+      height: ResolutionConstants.quadHD.height
+    )
+    static let ultraHD = Resolution(
+      unchecked: ResolutionConstants.ultraHD.width,
+      height: ResolutionConstants.ultraHD.height
+    )
+    static let fullUHD = Resolution(
+      unchecked: ResolutionConstants.fullUHD.width,
+      height: ResolutionConstants.fullUHD.height
+    )
 }
