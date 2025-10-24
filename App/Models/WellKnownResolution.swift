@@ -27,25 +27,25 @@ public enum WellKnownResolution: CaseIterable {
 
     public var resolution: Resolution {
         switch self {
-        case .standardDefinition: return .standardDefinition
-        case .widescreenStandardDefinition: return .widescreenStandardDefinition
-        case .highDefinition: return .highDefinition
-        case .fullHD: return .fullHD
-        case .quadHD: return .quadHD
-        case .ultraHD: return .ultraHD
-        case .fullUHD: return .fullUHD
+        case .standardDefinition:            return .standardDefinition
+        case .widescreenStandardDefinition:  return .widescreenStandardDefinition
+        case .highDefinition:                return .highDefinition
+        case .fullHD:                        return .fullHD
+        case .quadHD:                        return .quadHD
+        case .ultraHD:                       return .ultraHD
+        case .fullUHD:                       return .fullUHD
         }
     }
 
     public var localizedDisplayName: String {
         switch self {
-        case .standardDefinition: return "SD (640×480)"
+        case .standardDefinition:           return "SD (640×480)"
         case .widescreenStandardDefinition: return "SD Widescreen (854×480)"
-        case .highDefinition: return "HD (1280×720)"
-        case .fullHD: return "Full HD (1920×1080)"
-        case .quadHD: return "Quad HD (2560×1440)"
-        case .ultraHD: return "Ultra HD (3840×2160)"
-        case .fullUHD: return "Full UHD (7680×4320)"
+        case .highDefinition:               return "HD (1280×720)"
+        case .fullHD:                       return "Full HD (1920×1080)"
+        case .quadHD:                       return "Quad HD (2560×1440)"
+        case .ultraHD:                      return "Ultra HD (3840×2160)"
+        case .fullUHD:                      return "Full UHD (7680×4320)"
         }
     }
 }
